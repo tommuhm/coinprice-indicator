@@ -236,10 +236,10 @@ class Exchange(object):
         for i in range(8, 0, -1):
             if number < 10**-i:
                 break
-    elif number >= 100:
+    elif number >= 1000:
         i = -2
     elif number >= 10:
-        i = -1
+        i = 0
 
     return ('{0:.' + str(i + 2) + 'f}').format(number)
 
