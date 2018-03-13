@@ -142,6 +142,9 @@ class Indicator(object):
         self.volume_item = Gtk.MenuItem('loading...')
         menu.append(self.volume_item)
 
+        self.exchange_item = Gtk.MenuItem(self.exchange.config['name'])
+        menu.append(self.exchange_item)
+
         menu.append(Gtk.SeparatorMenuItem())
 
         # asset choice menu
